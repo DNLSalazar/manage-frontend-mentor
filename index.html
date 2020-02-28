@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./normalize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="">
+    </div>
+
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Pricing</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Product</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">About Us</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Careers</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Community</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- <button class="btn header__starter-button">Get Started</button> -->
+  </header>
+
+  <!-- Intro -->
+
+  <section class="intro" id="intro">
+    <img src="./images/illustration-intro.svg" alt="" class="intro__img">
+
+    <h1 class="section__title section__title--intro">
+      Bring everyone together to build better products.
+    </h1>
+    <p class="section__body-text secction__body-text--intro">
+      Manage makes it simple for software teams to plan day-to-day 
+      tasks while keeping the larger team goals in view.
+    </p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <!-- Why Us  -->
+
+  <section class="why_us" id="why">
+    <h2 class="section__title section__title--why">
+      What’s different about Manage?
+    </h2>
+    <p class="section__body-text section__body-text--why">
+      Manage provides all the functionality your team needs, without 
+      the complexity. Our software is tailor-made for modern digital 
+      product teams. 
+    </p>
+
+    <div class="because">
+      <div class="because__item">
+        <span class="btn because__label">01</span>
+        <h3 class="section__subtitle section__subtitle--because">
+          Track company-wide progress
+        </h3>
+        <p class="section__body-text secction__body-text--because">
+          See how your day-to-day tasks fit into the wider vision. Go from 
+          tracking progress at the milestone level all the way done to the 
+          smallest of details. Never lose sight of the bigger picture again.
+        </p>
+      </div>
+
+      <div class="because__item">
+        <span class="btn because__label">02</span>
+        <h3 class="section__subtitle section__subtitle--because">
+          Advanced built-in reports
+        </h3>
+        <p class="section__body-text secction__body-text--because">
+          Set internal delivery estimates and track progress toward company 
+          goals. Our customisable dashboard helps you build out the reports 
+          you need to keep key stakeholders informed.
+        </p>
+      </div>
+
+      <div class="because__item">
+        <span class="btn because__label">03</span>
+        <h3 class="section__subtitle section__subtitle--because">
+          Everything you need in one place
+        </h3>
+        <p class="section__body-text secction__body-text--because">
+          Stop jumping from one service to another to communicate, store files, 
+          track tasks and share documents. Manage offers an all-in-one team 
+          productivity solution.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+
+  <section class="testimonials" id="testimonials">
+    <h2 class="section__title section__title--testimonials">
+      What they’ve said
+    </h2>
+
+    <div class="testimonials__container">
+
+      <div class="testimonial__item">
+        <img src="./images/avatar-anisha.png" alt="Anisha Li" class="testimonial__img">
+        <h3 class="section__subtitle section__subtitle--test-item">
+          Anisha Li
+        </h3>
+        <p class="section__body-text section__body-test--testimonial">
+          “Manage has supercharged our team’s workflow. The ability to maintain 
+          visibility on larger milestones at all times keeps everyone motivated.”
+        </p>
+      </div>
+
+      <div class="testimonial__item testimonial__item--after">
+        <img src="./images/avatar-ali.png" alt="Ali Bravo" class="testimonial__img">
+        <h3 class="section__subtitle section__subtitle--test-item">
+          Ali Bravo
+        </h3>
+        <p class="section__body-text section__body-test--testimonial">
+          “We have been able to cancel so many other subscriptions since using 
+          Manage. There is no more cross-channel confusion and everyone is much 
+          more focused.”
+        </p>
+      </div>
+
+      <div class="testimonial__item  testimonial__item--after">
+        <img src="./images/avatar-richard.png" alt="Richard Watts" class="testimonial__img">
+        <h3 class="section__subtitle section__subtitle--test-item">
+          Richard Watts
+        </h3>
+        <p class="section__body-text section__body-test--testimonial">
+          “Manage allows us to provide structure and process. It keeps us organized 
+          and focused. I can’t stop recommending them to everyone I talk to!”
+        </p>
+      </div>
+
+      <div class="testimonial__item  testimonial__item--after">
+        <img src="./images/avatar-shanai.png" alt="Shanai Gough" class="testimonial__img">
+        <h3 class="section__subtitle section__subtitle--test-item">
+          Shanai Gough
+        </h3>
+        <p class="section__body-text section__body-test--testimonial">
+          “Their software allows us to track, manage and collaborate on our projects 
+          from anywhere. It keeps the whole team in-sync without being intrusive.”
+        </p>
+      </div>
+
+    </div>
+
+    <ul class="testimonials__carousel__marker">
+
+      <li class="testimonials__carousel__marker--item carousel__marker--activated"></li>
+
+      <li class="testimonials__carousel__marker--item"></li>
+
+      <li class="testimonials__carousel__marker--item"></li>
+
+      <li class="testimonials__carousel__marker--item"></li>
+    </ul>
+
+    <button class="btn">Get Started</button>
+  </section> 
+
+  <!-- Pre-footer Invitation -->
+
+  <section class="pre_footer">
+    <h1 class="section__title section__title--pre_footer">
+      Simplify how your team works today.
+    </h1>
+    <button class="btn btn--pre_footer">Get Started</button>
+  </section>
+ 
+  <!-- Footer -->
+
+  <footer>
+    <div class="get-email">
+      <input type="text" placeholder="Updates in your inbox…">
+      <button class="btn">Go</button>
+    </div>
+
+    <nav class="nav nav-footer">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link">Pricing</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Product</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">About Us</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Careers</a>
+        </li>
+
+        <li class="nav__item">
+          <a href="#" class="nav__link">Community</a>
+        </li>
+      </ul>
+    </nav>
+
+    <ul class="social__list">
+      <li class="social__item">
+        <a href="#" class="social__link"></a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link"></a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link"></a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link"></a>
+      </li>
+
+      <li class="social__item">
+        <a href="#" class="social__link"></a>
+      </li>
+    </ul>
+
+    <img src="./images/logo_dark-background.svg" alt="">
+    <p class="section__body-test">Copyright 2020. All Rights Reserved</p>
+  </footer>  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
