@@ -346,13 +346,14 @@ header {
     padding: 1.5em;
   }
 
-  .nav__list {
+  .nav__header .nav__list {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    background: transparent;
   }
 
   .nav__item + .nav__item {
