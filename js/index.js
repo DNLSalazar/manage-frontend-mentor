@@ -1,3 +1,5 @@
+// Carousel's Variables
+
 const carouselItems = document.getElementsByClassName('testimonial__item')
 const carouselMarkers = document.querySelectorAll('.testimonials__carousel__marker--item')
 
@@ -8,6 +10,15 @@ const CLASS_AFTER = 'testimonial__item--after'
 const CLASS_CURRENT = 'testimonial__item--current'
 const CAROUSEL_ACTIVATED = 'carousel__marker--activated'
 
+// Nav Toggle Variables
+
+const toggleButton = document.getElementById('toggleButton--nav')
+const nav = document.getElementById('nav')
+
+const CLASS_ACTIVATED = 'nav--activated'
+const CLASS_BUTTON_ACTIVATED = 'nav-toggle--activated'
+
+// Carouser Functionality
 
 carouselMarkers.forEach(element => 
   element.addEventListener('click', moveCarousel)
@@ -32,4 +43,14 @@ function moveCarousel () {
       carouselItems[i].classList.add(CLASS_AFTER)
     }
   }
+}
+
+// Toggle Navigation Functionality
+
+console.log(toggleButton)
+toggleButton.addEventListener('click', toggleNav)
+
+function toggleNav () {
+  this.classList.toggle(CLASS_BUTTON_ACTIVATED)
+  nav.classList.toggle(CLASS_ACTIVATED)
 }
